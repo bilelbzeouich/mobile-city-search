@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".WorldActivity">
+
+    <!-- Title bar -->
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#4054B2"
+        android:padding="16dp"
+        android:text="WorldActivity"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Continents Spinner -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sélectionnez un continent:"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp" />
+
+    <Spinner
+        android:id="@+id/spinnerContinents"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Countries Spinner -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sélectionnez un pays:"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp" />
+
+    <Spinner
+        android:id="@+id/spinnerCountries"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Selected information display -->
+    <TextView
+        android:id="@+id/textViewSelection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="24dp"
+        android:gravity="center" />
+
+    <!-- Button to open Wikipedia -->
+    <Button
+        android:id="@+id/buttonWikipedia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ouvrir Wikipedia"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout> 
